@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\source\\repos\\Ferreteria\\Ferreteria\\Ferreteria.csproj": {}
+    "C:\\Users\\sergi\\Downloads\\Ferreteria\\Ferreteria\\Ferreteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\source\\repos\\Ferreteria\\Ferreteria\\Ferreteria.csproj": {
+    "C:\\Users\\sergi\\Downloads\\Ferreteria\\Ferreteria\\Ferreteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\source\\repos\\Ferreteria\\Ferreteria\\Ferreteria.csproj",
+        "projectUniqueName": "C:\\Users\\sergi\\Downloads\\Ferreteria\\Ferreteria\\Ferreteria.csproj",
         "projectName": "Ferreteria",
-        "projectPath": "C:\\Users\\Owner\\source\\repos\\Ferreteria\\Ferreteria\\Ferreteria.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\source\\repos\\Ferreteria\\Ferreteria\\obj\\",
+        "projectPath": "C:\\Users\\sergi\\Downloads\\Ferreteria\\Ferreteria\\Ferreteria.csproj",
+        "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sergi\\Downloads\\Ferreteria\\Ferreteria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -61,6 +75,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
